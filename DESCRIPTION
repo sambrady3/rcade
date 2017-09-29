@@ -1,0 +1,14 @@
+Package: rcade
+Type: Package
+Title: Perform Classifier-Adjusted Density Estimation
+Version: 0.1.0
+Author: Sam Brady
+Maintainer: sambrady3@gmail.com
+Description: Performs anomaly detection using the Classifier-Adjusted Density Estimation algorithm 
+described in the paper at https://people.cs.umass.edu/~lfriedl/pubs/SDM2014-paper.pdf
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat
+RoxygenNote: 6.0.1
