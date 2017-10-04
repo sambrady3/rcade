@@ -32,7 +32,7 @@ generate_uniform.character <- function(x) {
 }
 
 generate_uniform.data.frame <- function(x) {
-  as_data_frame(lapply(x, generate_uniform))
+  tibble::as_tibble(lapply(x, generate_uniform))
 }
 
 generate_uniform.default <- function(x) {

@@ -8,7 +8,7 @@ with the same length as the input vector.}
 generate_uniform(x)
 }
 \arguments{
-\item{x}{A vector.}
+\item{x}{A vector or dataframe.}
 }
 \value{
 A vector representing a uniform distribution bounded by the values of \code{x},
