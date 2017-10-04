@@ -20,7 +20,7 @@ generate_uniform.numeric <- function(x) {
 }
 
 generate_uniform.integer <- function(x) {
-  sample(min(x):max(x), length(x), replace=TRUE)
+  sample(min(x, na.rm = TRUE):max(x, na.rm = TRUE), length(x), replace=TRUE)
 }
 
 generate_uniform.factor <- function(x) {
@@ -32,7 +32,7 @@ generate_uniform.character <- function(x) {
 }
 
 generate_uniform.data.frame <- function(x) {
-  as_data_frame(lapply(x[complete.cases(x), ], generate_uniform))
+  as_data_frame(lapply(x, generate_uniform))
 }
 
 generate_uniform.default <- function(x) {
